@@ -1,0 +1,206 @@
+
+@font-face {
+    font-family: NeutralFace;
+    font-weight: normal;
+    src: url("fonts/NeutralFace.otf");
+}
+
+@font-face {
+    font-family: NeutralFace;
+    font-weight: bold;
+    src: url(fonts/NeutralFace-Bold.otf);
+}
+
+/*--General--*/
+body {
+    margin: 0px;
+    background-color: black;
+}
+
+.container {
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*--Main horizontal navbar--*/
+header {
+    background-color: black;
+    color: white;
+}
+
+header div {
+    display: flex;
+    border-width: 3px;
+}
+
+header nav li {
+    display: inline;
+    font-family: NeutralFace;
+    margin-inline-end: 10px;
+    font-size: 12pt;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover{
+    color: tomato;
+}
+
+#logo {
+    font-family: NeutralFace;
+}
+
+/*--Drawer select slab--*/
+#drawerSelect {
+    background-color:tomato;
+    display: flex;
+    justify-content: space-around;
+}
+
+#drawerSelect h1{
+    margin: 0px;
+    padding: 1em;
+    font-size: 20pt;
+    font-family: NeutralFace;
+}
+
+.arrow {
+    max-width: 40px;
+    max-height: 40px;
+    align-self: center;
+    
+}
+
+/*--Actual art displays--*/
+.artworkShowcase {
+    
+    padding: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.art {
+    max-width: 70vw;
+    max-height: 60vh;
+    display: inline;
+}
+
+.artText {
+    background-color: white;
+    font-family: NeutralFace;
+    color: black;
+    display: inline;
+    padding: 20px;
+}
+
+.artPrice {
+    font-size: 8pt;
+}
+
+.artDescription {
+    font-size: 10pt;
+}
+
+.even {
+    background-color: white;
+}
+
+.even .artText{
+    background-color: black;
+    color: white;
+    order: 1;
+}
+
+.even .art {
+    order: 2;
+}
+
+.fadeInThing {
+    animation-name: fadein;
+    animation-duration: 1s;
+}
+
+
+@keyframes fadein {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+/*--Exhibitions--*/
+.exhibitionText {
+    background-color: white;
+    font-family: sans-serif;
+    font-size: 11pt;
+    color: black;
+    display: inline;
+    padding: 20px;
+
+}
+
+/*--Footer--*/
+
+footer{
+    background: black;
+    color: white;
+    font-family: sans-serif;
+    font-size: 10pt;
+    display: flex;
+    flex-direction: column;
+    
+    height: 100%;
+
+    justify-content: flex-end;
+
+    padding: 20px;
+}
+
+footer h4{
+    font-weight: 100;
+    font-family: 'NeutralFace';
+}
+
+footer li{
+    list-style: none;
+}
+
+footer ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#biography {
+    display: flex;
+    padding: 10%;
+    justify-content: center;
+    font-family: sans-serif;
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+
+#biography li{
+    list-style: none;
+    padding: 1em;
+    font-weight: bold;
+    font-size: 14pt;
+
+}
+
+#biography ul {
+    padding: 0px;
+}
+
+/*--Contact*/
+
+#contact {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+}

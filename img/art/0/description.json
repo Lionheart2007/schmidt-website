@@ -1,0 +1,26 @@
+{
+    "info" : [
+        {
+            "name": "Peak I",
+            "technical": "TEMPERA/OIL ON PLATE, 150 x 230 cm (59 x 90 in.)",
+            "price": "Price on Application"
+        },
+        {
+            "name": "ÄTTI (FATHER)",
+            "technical": "TEMPERA/OIL ON PLATE, 51 x 81 cm (20 x 32 in.)",
+            "price": "EURO 6.000,--"
+        },
+        {
+            "name": "ANAANA (MOTHER)",
+            "technical": "TEMPERA/OIL ON PLATE 80 X 120 CM (31,5 x 47,2 in.)",
+            "price": "EURO 9.000,--"
+        },
+        {
+            "name": "INANNA (THE COVERED)",
+            "technical": "TEMPERA/OIL ON PLATE, 49 X 84 cm (19 x 33 in.)",
+            "price": "EURO 6.000,--" 
+        }
+    
+
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "info" : [
+        {
+            "name": "EAGLE",
+            "technical": "WHITE PENCIL AND GOUACHE, PENCIL DRAWING,  CA. 10 x 10 cm (4 x 4 In.)",
+            "price": "FROM EURO 130,--"
+        },
+        {
+            "name": "HOG",
+            "technical": "WHITE PENCIL AND GOUACHE, PENCIL DRAWING,  CA. 10 x 10 cm",
+            "price": "FROM EURO 130,--"
+        },
+        {
+            "name": "FOX",
+            "technical": "WHITE PENCIL AND GOUACHE, PENCIL DRAWING,  CA. 10 x 10 cm",
+            "price": "FROM EURO 130,--"
+        },
+        {
+            "name": "BISON(?)",
+            "technical": "WHITE PENCIL AND GOUACHE, PENCIL DRAWING,  CA. 10 x 10 cm",
+            "price": "FROM EURO 130,--"
+        },
+        {
+            "name": "WOLF I",
+            "technical": "WHITE PENCIL AND GOUACHE, PENCIL DRAWING,  CA. 10 x 10 cm",
+            "price": "FROM EURO 130,--"
+        },
+        {
+            "name": "FISH",
+            "technical": "WHITE PENCIL AND GOUACHE, PENCIL DRAWING,  CA. 10 x 10 cm",
+            "price": "FROM EURO 130,--"
+        },
+        {
+            "name": "WOLF II",
+            "technical": "WHITE PENCIL AND GOUACHE, PENCIL DRAWING,  CA. 10 x 10 cm",
+            "price": "FROM EURO 130,--"
+        },
+        {
+            "name": "CROW",
+            "technical": "WHITE PENCIL AND GOUACHE, PENCIL DRAWING,  CA. 10 x 10 cm",
+            "price": "FROM EURO 130,--"
+        }
+    ]
+}

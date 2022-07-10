@@ -2,7 +2,7 @@ let currentDrawer = 0;
 
 //--FUNCTION TO LOAD DESCRIPTIONS--//
 async function loadDescription(outerMost, index){
-    let res = await fetch(`/img/art/${currentDrawer}/description.json`);
+    let res = await fetch(`/ img/art/${currentDrawer}/description.json`);
     res = await res.json();
 
     let artText = document.createElement("div");

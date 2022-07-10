@@ -2,7 +2,7 @@ let currentDrawer = 0;
 
 //--FUNCTION TO LOAD DESCRIPTIONS--//
 async function loadDescription(outerMost, index){
-    let res = await fetch(`/ img/art/${currentDrawer}/description.json`);
+    let res = await fetch(`img/art/${currentDrawer}/description.json`);
     res = await res.json();
 
     let artText = document.createElement("div");
@@ -31,7 +31,7 @@ async function loadArtShowcase(){
     const mainContainer = document.getElementById("drawer");
     mainContainer.innerHTML = '';
 
-    let imagesStored = await fetch('/img/art/directory.json');
+    let imagesStored = await fetch('img/art/directory.json');
     imagesStored = await imagesStored.json();
     imagesStored = imagesStored.imagesStored;
 
@@ -60,7 +60,7 @@ async function setUpDrawerSelect(){
     const currentDrawerH1 = document.getElementById("drawerTitle");
     currentDrawerH1.textContent = `Drawer ${currentDrawer+1}`;
 
-    let imagesStored = await fetch('/img/art/directory.json');
+    let imagesStored = await fetch('img/art/directory.json');
     imagesStored = await imagesStored.json();
     imagesStored = imagesStored.imagesStored;
 

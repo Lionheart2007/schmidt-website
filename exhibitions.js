@@ -1,7 +1,7 @@
 
 
 async function loadImagesAndDescriptions(){
-    let res = await fetch('/img/exhibitions/description.json');
+    let res = await fetch('img/exhibitions/description.json');
     res = await res.json();
     
 
@@ -15,7 +15,7 @@ async function loadImagesAndDescriptions(){
         exhibitionShowcase.className = "artworkShowcase";
 
         let image = document.createElement("img");
-        image.src = `/img/exhibitions/${i}.jpg`;
+        image.src = `img/exhibitions/${i}.jpg`;
 
         exhibitionShowcase.appendChild(image);
         

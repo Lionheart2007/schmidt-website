@@ -44,7 +44,7 @@ async function loadArtShowcase(){
         //-- ADD IMAGE --//
         let image = document.createElement('img');
         image.className = 'art';
-        image.src = `/img/art/${currentDrawer}/${i}.jpg`;
+        image.src = `img/art/${currentDrawer}/${i}.jpg`;
         outerMost.appendChild(image);
     
         //--ADD IMAGE DESCRIPTION--//

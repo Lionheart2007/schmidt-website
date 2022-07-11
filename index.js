@@ -7,17 +7,17 @@ async function loadDescription(outerMost, index){
 
     let artText = document.createElement("div");
     artText.className = 'artText';
-    outerMost.appendChild(artText)
+    await outerMost.appendChild(artText)
 
     let artTitle = document.createElement('p');
     artTitle.className = 'artTitle';
     artTitle.textContent = res.info[index].name;
-    artText.appendChild(artTitle);
+    await artText.appendChild(artTitle);
 
     let artDescription = document.createElement('p');
     artDescription.className = 'artDescription';
     artDescription.textContent = res.info[index].technical;
-    artText.appendChild(artDescription);
+    await artText.appendChild(artDescription);
 
     let artPrice = document.createElement('p');
     artPrice.className = 'artPrice';
@@ -39,18 +39,18 @@ async function loadArtShowcase(){
         
         //-- CREATE ART SHOWCASE CONTAINER --//
         let outerMost = document.createElement("div");
-        outerMost.className = i%2 ? "artworkShowcase even":'artworkShowcase';
+        outerMost.className = (i%2 ? "artworkShowcase even":'artworkShowcase');
         
         //-- ADD IMAGE --//
         let image = document.createElement('img');
         image.className = 'art';
         image.src = `img/art/${currentDrawer}/${i}.jpg`;
-        outerMost.appendChild(image);
+        await outerMost.appendChild(image);
     
         //--ADD IMAGE DESCRIPTION--//
         loadDescription(outerMost, i);
         outerMost.className += ' fadeInThing';
-        mainContainer.appendChild(outerMost);
+        await mainContainer.appendChild(outerMost);
         
     }
 }

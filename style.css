@@ -244,18 +244,6 @@ footer ul {
         display: block;   
     }
 
-    .artTitle {
-        font-size: 18pt;
-    }
-
-    .artDescription {
-        font-size: 14pt;
-    }
-
-    .artPrice {
-        font-size: 1
-    }
-
     .art {
         margin-left: auto;
         margin-right: auto;

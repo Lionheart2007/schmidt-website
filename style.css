@@ -22,6 +22,10 @@ body {
     justify-content: space-around;
 }
 
+#logo {
+    
+}
+
 /*--Main horizontal navbar--*/
 header {
     background-color: black;
@@ -51,6 +55,12 @@ header a:hover{
 
 #logo {
     font-family: NeutralFace;
+    background-image: url('img/symbols/signature.png');
+    padding-left: 10%;
+    padding-right: 10%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /*--Drawer select slab--*/
@@ -87,14 +97,12 @@ header a:hover{
 .art {
     max-width: 70vw;
     max-height: 60vh;
-    display: inline;
 }
 
 .artText {
     background-color: white;
     font-family: NeutralFace;
     color: black;
-    display: inline;
     padding: 20px;
 }
 
@@ -188,6 +196,7 @@ footer ul {
     padding: 1em;
     font-weight: bold;
     font-size: 14pt;
+    display: block;
 
 }
 
@@ -197,10 +206,46 @@ footer ul {
 
 /*--Contact*/
 
-#contact {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10%;
+
+
+@media screen and (max-width: 600px){
+    header div{
+        flex-wrap: wrap;
+    }
+    
+    .container {
+        display: block;
+        text-align: center;
+    }
+
+    #logo {
+        display: block;
+    }
+
+    #topNavbar ul{
+        display: block;
+        flex-basis: 100%;
+    }
+
+    #topNavbar li {
+        display: block;
+        font-size: 16pt;
+        line-height: 1.5em;
+    }
+
+    .artworkShowcase{
+        display: block;
+    }
+
+    .artText{
+        display: block;
+    }
+
+    .art {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        align-self: center;
+    }
+
 }

@@ -16,12 +16,13 @@ async function loadImagesAndDescriptions(){
 
         let image = document.createElement("img");
         image.src = `img/exhibitions/${i}.jpg`;
+        image.className = 'art';
 
         exhibitionShowcase.appendChild(image);
         
 
         let description = document.createElement("div");
-        description.className = 'exhibitionText';
+        description.className = 'exhibitionText artText';
 
         description.textContent = res.exhibitions[i].text;
         exhibitionShowcase.appendChild(description);

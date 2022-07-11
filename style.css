@@ -208,7 +208,7 @@ footer ul {
 
 
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 900px){
     header div{
         flex-wrap: wrap;
     }
@@ -238,7 +238,19 @@ footer ul {
     }
 
     .artText{
-        display: block;
+        display: block;   
+    }
+
+    .artTitle {
+        font-size: 20pt;
+    }
+
+    .artDescription {
+        font-size: 14pt;
+    }
+
+    .artPrice {
+        font-size: 12pt;
     }
 
     .art {

@@ -212,9 +212,7 @@ footer ul {
 
 
 @media screen and (orientation:portrait){
-    header div{
-        flex-wrap: wrap;
-    }
+    
     
     .container {
         display: block;
@@ -256,4 +254,30 @@ footer ul {
         padding-right: 0px;
     }
 
+    #dropdownButton {
+        background-color: white;
+        display: block;
+    }
+    
+    #dropdownContainer {
+        width: 100%;
+        background-color: black;
+        align-items: center;
+        background-image: url("img/symbols/arrowDown.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 10vh;
+    }
+
+    #undrop {
+        width: 100%;
+        background-color: black;
+        align-items: center;
+        background-image: url("img/symbols/arrowUp.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 10vh;
+    }
 }

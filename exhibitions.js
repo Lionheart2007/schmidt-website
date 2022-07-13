@@ -11,6 +11,8 @@ async function loadImagesAndDescriptions(){
     body.className = 'artworkShowcase';
 
     for(let i = 0; i < res.numberOfExhibitions; i++){
+
+
         let exhibitionShowcase = document.createElement("div");
         exhibitionShowcase.className = "artworkShowcase";
 

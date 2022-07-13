@@ -2,7 +2,6 @@ let dropdownOpen = false;
 
 if(window.innerHeight > window.innerWidth){
     createDropdown();
-    dropdownOpen = true;
 }else{
     createNavbar();
 }
@@ -50,7 +49,7 @@ function closeDropdown() {
     let dropdownContainer = document.createElement("div");
     dropdownContainer.id = "dropdownContainer";
     dropdownContainer.addEventListener("click",openDropdown);
-   (document.getElementsByTagName("header")[0]).appendChild(dropdownContainer);
+   (document.getElementById("headerContainer")).appendChild(dropdownContainer);
 }
 
 

@@ -40,4 +40,4 @@ function main(){
     loadImagesAndDescriptions();
 }
 
-main();
+document.addEventListener("DOMContentLoaded", main);

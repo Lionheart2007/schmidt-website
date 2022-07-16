@@ -112,4 +112,6 @@ function main(){
     setUpDrawerSelect();
 }
 
-main();
+document.addEventListener("DOMContentLoaded",main);
+
+

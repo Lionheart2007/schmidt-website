@@ -1,23 +1,24 @@
 let dropdownOpen = false;
-
-if(window.innerHeight > window.innerWidth){
-    createDropdown();
-}else{
-    createNavbar();
-}
-
-let portrait = window.matchMedia("(orientation: portrait)");
-portrait.addEventListener("change", (e) => {
-    if(e.matches){
-        //Portrait mode
-        removeNavbar();
+function main(){
+    if(window.innerHeight > window.innerWidth){
         createDropdown();
-    } else {
-        //Landscape mode
-        removeDropdown();
+    }else{
         createNavbar();
     }
-});
+    
+    let portrait = window.matchMedia("(orientation: portrait)");
+    portrait.addEventListener("change", (e) => {
+        if(e.matches){
+            //Portrait mode
+            removeNavbar();
+            createDropdown();
+        } else {
+            //Landscape mode
+            removeDropdown();
+            createNavbar();
+        }
+    });
+}
 
 function createDropdown(){
     let dropdownContainer = document.createElement("div");
@@ -68,7 +69,7 @@ function createNavbar(){
 
     let li = document.createElement("li");
     let a = document.createElement("a");
-    a.href = "index.html";
+    a.href = "index.php";
     a.textContent = "Drawers";
 
     li.appendChild(a);
@@ -76,7 +77,7 @@ function createNavbar(){
 
     li = document.createElement("li");
     a = document.createElement("a");
-    a.href = "exhibitions.html";
+    a.href = "exhibitions.php";
     a.textContent = "Exhibitions";
 
     li.appendChild(a);
@@ -84,7 +85,7 @@ function createNavbar(){
 
     li = document.createElement("li");
     a = document.createElement("a");
-    a.href = "biography.html";
+    a.href = "biography.php";
     a.textContent = "Biography";
 
     li.appendChild(a);
@@ -92,7 +93,7 @@ function createNavbar(){
 
     li = document.createElement("li");
     a = document.createElement("a");
-    a.href = "contact.html";
+    a.href = "contact.php";
     a.textContent = "Contact";
 
     li.appendChild(a);
@@ -110,4 +111,4 @@ function removeNavbar(){
 }
 
 
-
+document.addEventListener("DOMContentLoaded",main);

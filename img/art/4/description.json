@@ -1,18 +1,18 @@
 {
     "info" : [
         {
-            "name": "MAKA II? (EARTH II?)",
-            "technical": "TEMPERA/OIL ON PLATE, 120 x 60 cm (47 x 24 in.)",
-            "price": "EURO 8.100,--"
-        },
-        {
-            "name": "UNTITLED",
-            "technical": "TEMPERA/OIL ON PLATE, 60 x 120 cm (24 x 47 in.)",
+            "name": "FOG",
+            "technical": "TEMPERA/OIL ON PLATE, 80 x 40 CM ( 31 x 16 IN.)",
             "price": "SOLD"
         },
         {
-            "name": "UNTITLED",
-            "technical": "TEMPERA/OIL ON PLATE, 60 x 120 cm (24 x 47 in.)",
+            "name": "WOOD",
+            "technical": "TEMPERA/OIL ON PLATE, 80 x 100 CM, (31 x 39 IN)",
+            "price": "STOLEN"
+        },
+        {
+            "name": "VULCANO",
+            "technical": "TEMPERA/OIL ON PLATE, 40 x 40  CM ( 16 x 16 IN)",
             "price": "SOLD"
         }
     ]

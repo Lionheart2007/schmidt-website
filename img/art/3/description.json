@@ -1,19 +1,44 @@
 {
     "info" : [
         {
-            "name": "FOG",
-            "technical": "TEMPERA/OIL ON PLATE, 80 x 40 CM ( 31 x 16 IN.)",
-            "price": "SOLD"
+            "name": "EAGLE",
+            "technical": "WHITE PENCIL AND GOUACHE, PENCIL DRAWING,  CA. 10 x 10 cm (4 x 4 In.)",
+            "price": "FROM EURO 130,--"
         },
         {
-            "name": "WOOD",
-            "technical": "TEMPERA/OIL ON PLATE, 80 x 100 CM, (31 x 39 IN)",
-            "price": "STOLEN"
+            "name": "HOG",
+            "technical": "WHITE PENCIL AND GOUACHE, PENCIL DRAWING,  CA. 10 x 10 cm",
+            "price": "FROM EURO 130,--"
         },
         {
-            "name": "VULCANO",
-            "technical": "TEMPERA/OIL ON PLATE, 40 x 40  CM ( 16 x 16 IN)",
-            "price": "SOLD"
+            "name": "FOX",
+            "technical": "WHITE PENCIL AND GOUACHE, PENCIL DRAWING,  CA. 10 x 10 cm",
+            "price": "FROM EURO 130,--"
+        },
+        {
+            "name": "BISON(?)",
+            "technical": "WHITE PENCIL AND GOUACHE, PENCIL DRAWING,  CA. 10 x 10 cm",
+            "price": "FROM EURO 130,--"
+        },
+        {
+            "name": "WOLF I",
+            "technical": "WHITE PENCIL AND GOUACHE, PENCIL DRAWING,  CA. 10 x 10 cm",
+            "price": "FROM EURO 130,--"
+        },
+        {
+            "name": "FISH",
+            "technical": "WHITE PENCIL AND GOUACHE, PENCIL DRAWING,  CA. 10 x 10 cm",
+            "price": "FROM EURO 130,--"
+        },
+        {
+            "name": "WOLF II",
+            "technical": "WHITE PENCIL AND GOUACHE, PENCIL DRAWING,  CA. 10 x 10 cm",
+            "price": "FROM EURO 130,--"
+        },
+        {
+            "name": "CROW",
+            "technical": "WHITE PENCIL AND GOUACHE, PENCIL DRAWING,  CA. 10 x 10 cm",
+            "price": "FROM EURO 130,--"
         }
     ]
 }

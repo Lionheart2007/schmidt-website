@@ -1,27 +1,40 @@
 let currentDrawer = 0;
 
 //--FUNCTION TO LOAD DESCRIPTIONS--//
-async function loadDescription(outerMost, index){
-    let res = await fetch(`img/art/${currentDrawer}/description.json`);
-    res = await res.json();
+async function loadDescription(outerMost, drawer, image){
 
     let artText = document.createElement("div");
     artText.className = 'artText';
-    await outerMost.appendChild(artText)
+    outerMost.appendChild(artText)
 
     let artTitle = document.createElement('p');
     artTitle.className = 'artTitle';
-    artTitle.textContent = res.info[index].name;
-    await artText.appendChild(artTitle);
+    artTitle.textContent = info[drawer][image][1];
+    artText.appendChild(artTitle);
 
     let artDescription = document.createElement('p');
     artDescription.className = 'artDescription';
-    artDescription.textContent = res.info[index].technical;
-    await artText.appendChild(artDescription);
+    artDescription.textContent = info[drawer][image][2];
+    artText.appendChild(artDescription);
 
     let artPrice = document.createElement('p');
     artPrice.className = 'artPrice';
-    artPrice.textContent = res.info[index].price;
+
+    switch(info[drawer][image][3]){
+        case "-1":
+            artPrice.textContent = "Sold";
+            break;
+        case "-2":
+            artPrice.textContent = "Not for Sale";
+            break;
+        case "-3":
+            artPrice.textContent = "Stolen";
+            break;
+        default:
+            artPrice.textContent = `EURO ${info[drawer][image][3]},--`   ;
+    }
+
+
     artText.appendChild(artPrice);
 }
 
@@ -31,11 +44,7 @@ async function loadArtShowcase(){
     const mainContainer = document.getElementById("drawer");
     mainContainer.innerHTML = '';
 
-    let imagesStored = await fetch('img/art/directory.json');
-    imagesStored = await imagesStored.json();
-    imagesStored = imagesStored.imagesStored;
-
-    for(let i = 0; i<imagesStored[currentDrawer]; i++){
+    for(let i = 0; i<info[currentDrawer].length; i++){
         
         //-- CREATE ART SHOWCASE CONTAINER --//
         let outerMost = document.createElement("div");
@@ -44,13 +53,14 @@ async function loadArtShowcase(){
         //-- ADD IMAGE --//
         let image = document.createElement('img');
         image.className = 'art';
-        image.src = `img/art/${currentDrawer}/${i}.jpg`;
-        await outerMost.appendChild(image);
+        let src = `img/art/${ids[currentDrawer]}/${info[currentDrawer][i][0]}.jpg`;
+        image.src = src;
+        outerMost.appendChild(image);
     
         //--ADD IMAGE DESCRIPTION--//
-        loadDescription(outerMost, i);
+        loadDescription(outerMost, currentDrawer, i);
         outerMost.className += ' fadeInThing';
-        await mainContainer.appendChild(outerMost);
+        mainContainer.appendChild(outerMost);
         
     }
 }
@@ -66,13 +76,13 @@ async function setUpDrawerSelect(){
 
     const arrowForward = document.getElementById("arrowForward");
     arrowForward.addEventListener("click", () => {
-        if(currentDrawer<imagesStored.length-1){
+        if(currentDrawer<ids.length-1){
             currentDrawer++;
             loadArtShowcase();
-            currentDrawerH1.textContent = `Drawer ${currentDrawer+1}`;
+            currentDrawerH1.textContent = `Dravwer ${currentDrawer+1}`;
         }
 
-        if(currentDrawer === imagesStored.length-1){
+        if(currentDrawer === ids.length-1){
             arrowForward.style.opacity = '0%';
         }
         else{

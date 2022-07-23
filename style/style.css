@@ -2,19 +2,19 @@
 @font-face {
     font-family: NeutralFace;
     font-weight: normal;
-    src: url("fonts/NeutralFace.otf");
+    src: url("/fonts/NeutralFace.otf");
 }
 
 @font-face {
     font-family: NeutralFace;
     font-weight: bold;
-    src: url(fonts/NeutralFace-Bold.otf);
+    src: url("/fonts/NeutralFace-Bold.otf");
 }
 
 @font-face {
     font-family: PublicSans;
     font-weight: 100;
-    src: url("fonts/PublicSans.ttf");
+    src: url("/fonts/PublicSans.ttf");
 }
 
 /*--General--*/
@@ -58,7 +58,7 @@ header a:hover{
 
 #logo {
     font-family: NeutralFace;
-    background-image: url('img/symbols/signature.png');
+    background-image: url('/img/symbols/signature.png');
     padding-left: 10%;
     padding-right: 10%;
     background-position: center;
@@ -229,6 +229,37 @@ footer ul {
     background-size: contain;
     height: 10vh;
 }
+
+.login {
+    font-family: NeutralFace;  
+    display: block;
+    background-color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin: 10%;
+    padding: 10%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.formContainer{
+    padding: 0.25em;
+}
+
+
+
+.login input[type=submit]{
+    background-color: black;
+    background-clip: border-box;
+    color: white;
+    padding: 0.5em;
+    border-radius: 5px;
+    margin-top: 1em;
+    font-family: NeutralFace;
+}
+
 
 
 @media screen and (orientation:portrait){

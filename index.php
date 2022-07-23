@@ -36,46 +36,7 @@
     </div>
 
     <div id ="drawer">
-
-        <?php foreach($images as $image): ?>
-
-        <div 
-        <?php 
-            
-            if($even){
-                echo "class ='artworkShowcase even'";
-                $even = false;
-            }else{
-                echo "class ='artworkShowcase'";
-                $even = true;
-            }
-
-            
-        ?>
-        >
-            <img 
-            <?php
-                echo 'src = "img/art/0/'.$image['id'].'.jpg"';
-
-            ?>
-            class="art <">
-            <div class="artText">
-                <p class="artTitle"><?php echo $image['title'];?></p>
-                <p class="artDescription"><?php echo $image['technique'];?></p>
-                <p class="artPrice">
-                    <?php
-                    if($image['price'] == -1){
-                        echo 'Price on Application';
-                    }else{
-                        echo "EURO " . $image['price'] . ",--";
-                    }
-                    ?></p>
-            </div>
-        </div>
         
-        <?php endforeach ?>
-    
-
     </div>
     
 <?php include 'inc/footer.php'; ?>

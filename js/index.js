@@ -76,13 +76,13 @@ async function setUpDrawerSelect(){
 
     const arrowForward = document.getElementById("arrowForward");
     arrowForward.addEventListener("click", () => {
-        if(currentDrawer<imagesStored.length-1){
+        if(currentDrawer<ids.length-1){
             currentDrawer++;
             loadArtShowcase();
-            currentDrawerH1.textContent = `Drawer ${currentDrawer+1}`;
+            currentDrawerH1.textContent = `Dravwer ${currentDrawer+1}`;
         }
 
-        if(currentDrawer === imagesStored.length-1){
+        if(currentDrawer === ids.length-1){
             arrowForward.style.opacity = '0%';
         }
         else{
